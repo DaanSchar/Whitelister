@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.schar.whitelister.application.MainController">
+   <children>
+      <Button layoutX="98.0" layoutY="340.0" mnemonicParsing="false" onAction="#selectFileAction" text="Select File" textFill="#696969">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="101.0" layoutY="497.0" mnemonicParsing="false" onAction="#generateAction" text="Generate" textFill="DIMGRAY">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextArea fx:id="whiteListArea" layoutX="800.0" layoutY="53.0" prefHeight="646.0" prefWidth="458.0" />
+      <TextArea fx:id="fileArea" layoutX="293.0" layoutY="53.0" prefHeight="646.0" prefWidth="227.0" />
+      <TextArea fx:id="failedArea" layoutX="549.0" layoutY="53.0" prefHeight="646.0" prefWidth="227.0" />
+      <Text fill="DIMGRAY" layoutX="595.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Failted To WhiteList:" textAlignment="CENTER" wrappingWidth="134.982421875">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <TextField fx:id="columnNameField" layoutX="22.0" layoutY="124.0" prefHeight="26.0" prefWidth="238.0" />
+      <Text fill="DIMGRAY" layoutX="22.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you use a csv file, please enter the correct column name where the player names are stored" textAlignment="CENTER" wrappingWidth="237.884765625" />
+      <Text fill="DIMGRAY" layoutX="288.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Names:" textAlignment="CENTER" wrappingWidth="237.884765625">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="DIMGRAY" layoutX="910.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generated WhiteList:" textAlignment="CENTER" wrappingWidth="237.884765625">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="selectedFileField" layoutX="22.0" layoutY="303.0" prefHeight="26.0" prefWidth="238.0" />
+      <Text fill="DIMGRAY" layoutX="22.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently Selected:" textAlignment="CENTER" wrappingWidth="237.884765625" />
+      <Text fill="DIMGRAY" layoutX="22.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 1: (CSV only)" textAlignment="CENTER" wrappingWidth="237.884765625">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="DIMGRAY" layoutX="23.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 2:" textAlignment="CENTER" wrappingWidth="237.884765625">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="DIMGRAY" layoutX="23.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a file OR copy paste into Names" textAlignment="CENTER" wrappingWidth="237.884765625" />
+      <Text fill="DIMGRAY" layoutX="22.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 3:" textAlignment="CENTER" wrappingWidth="237.884765625">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="DIMGRAY" layoutX="22.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate and wait" textAlignment="CENTER" wrappingWidth="237.884765625" />
+   </children>
+</AnchorPane>
